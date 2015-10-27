@@ -12,5 +12,8 @@ class TestFraccion < Test::Unit::TestCase
 	end
 	def test_suma
 		assert_equal("3/4", (@f2+(@f3)).to_s)
-	end 
+	end
+	def test_resta
+		assert_equal("1/4", (@f2-(@f3)).to_s)
+	end
 end
