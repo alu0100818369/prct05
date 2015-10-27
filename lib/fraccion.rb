@@ -37,4 +37,14 @@ class Fraccion
 		end
 		Fraccion.new(a,b)
 	end
+	def /(other)
+		a = @x*other.y
+		b = @y*other.x
+		c = gcd(a,b)
+		if c!=1
+			a = a/c
+			b = b/c
+		end
+		Fraccion.new(a,b)
+	end
 end

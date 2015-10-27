@@ -19,4 +19,7 @@ class TestFraccion < Test::Unit::TestCase
 	def test_multi
 		assert_equal("1/8", (@f2*(@f3)).to_s)
 	end
+	def test_divi
+		assert_equal("2/1", (@f2/(@f3)).to_s)
+	end
 end
